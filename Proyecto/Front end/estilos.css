@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+
+header{
+    background: -webkit-linear-gradient(to right, #4568dc, #b06ab3);
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    width: 100%;
+    height:600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+
+nav{
+    background: -webkit-linear-gradient(to right, #4568dc, #b06ab3);
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    width: 100%;
+    height: 70px;
+    position: relative;
+    
+}
+
+nav::after{
+    position: absolute;
+    bottom:-5px;
+    left: 0;
+    content:'' ;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    width: 100%;
+    height: 10px;
+    z-index: 1;
+    filter: blur(5px);
+}
+
+.contenedor{
+    
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+
+.logo h1{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    z-index: 10;
+}
+
+nav a{
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 3rem;
+}
+
+.text{
+    width:40%;
+    color: #fff;
+    
+}
+
+.text h1{
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.text p{
+    font-size:18px;
+    margin-top: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img{
+   
+    width: 40%;
+    box-shadow: 0 20px 20px -12px #000;
+    border-radius: 1.5rem;
+    
+}
+
+
+
+@media screen and ( Max-width:700px){
+
+    
+    header{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .text{
+        width: 80%;
+        text-align: center;
+    }
+
+    .text h1{
+        font-size:30px;
+    }
+
+    .text p{
+        font-size:15px;
+    }
+    
+    img{
+        
+        width: 80%;
+        
+    }
+};
+
